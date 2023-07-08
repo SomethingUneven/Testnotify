@@ -5,7 +5,7 @@ local GUI = game:GetService("CoreGui"):FindFirstChild("STX_Notification")
 local function createAmbientShadow()
     local ambientShadow = Instance.new("ImageLabel")
     ambientShadow.Name = "ambientShadow"
-    ambientShadow.Parent = GUI
+    ambientShadow.Parent = game:GetService("Workspace") -- Change parent to workspace
     ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
     ambientShadow.BackgroundTransparency = 1
     ambientShadow.BorderSizePixel = 0
